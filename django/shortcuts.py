@@ -49,6 +49,8 @@ def redirect(to, *args, permanent=False, **kwargs):
     return redirect_class(resolve_url(to, *args, **kwargs))
 
 
+
+
 def _get_queryset(klass):
     """
     Return a QuerySet or a Manager.
@@ -188,3 +190,5 @@ def resolve_url(to, *args, **kwargs):
 
     # Finally, fall back and assume it's a URL
     return to
+def make_toast():
+    return "toast"
